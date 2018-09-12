@@ -14,15 +14,17 @@
             android:layout_width="match_parent"
             android:id="@+id/my_awesome_toolbar"
             android:layout_height="match_parent"
-            app:navigationIcon="?attr/homeAsUpIndicator"
+
             app:title="Horizontal Cards"
 
 
             >
-
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
+           <!-- app:navigationIcon="?attr/homeAsUpIndicator"-->
+
+
     <com.github.florent37.bubbletab.BubbleTab
         android:layout_below="@id/app_bar"
         android:id="@+id/tabs"
