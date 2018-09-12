@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="square">Square</string>
+    <string name="custom">Custom</string>
+    <string name="profile">Profile</string>
+    <string name="saved">Saved</string>
+</resources>
