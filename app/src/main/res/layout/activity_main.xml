@@ -5,8 +5,19 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     tools:context=".MainActivity">
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:id="@+id/titel_text"
+        android:textColor="@color/colorblack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business Card Maker"
+        />
 
     <LinearLayout
+        android:layout_below="@id/titel_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -26,26 +37,31 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                card_view:cardBackgroundColor="@color/colorPrimary"
+                card_view:cardBackgroundColor="@color/colorPink"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardElevation="5dp">
 
                 <RelativeLayout
-
+                    android:id="@+id/horizontal_card"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:padding="7dp"
+                        android:layout_height="80dp"
                         android:src="@drawable/horizontal_card" />
 
                     <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
+                        android:textSize="15dp"
+                        android:background="#4000"
                         android:padding="5dp"
                         android:text="@string/horizontal" />
                 </RelativeLayout>
@@ -62,15 +78,26 @@
                 card_view:cardElevation="5dp">
 
                 <RelativeLayout
+                    android:background="@color/colorOrange"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
+                    <ImageView
+                        android:padding="7dp"
+                        android:layout_width="80dp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="80dp"
+                        android:src="@drawable/vertical_card" />
                     <TextView
+                        android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:background="#4000"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="15dp"
                         android:text="@string/vertical" />
                 </RelativeLayout>
 
@@ -94,15 +121,25 @@
                 card_view:cardCornerRadius="4dp">
 
                 <RelativeLayout
+                    android:background="@color/colorYellow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:padding="12dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/square_card" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
                         android:padding="5dp"
+                        android:background="#4000"
                         android:text="@string/square" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -116,14 +153,24 @@
                 card_view:cardCornerRadius="4dp">
 
                 <RelativeLayout
+                    android:background="@color/colorLightBlue"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_custom_card" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
+                        android:background="#4000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
                         android:padding="5dp"
                         android:text="@string/custom" />
                 </RelativeLayout>
@@ -148,15 +195,25 @@
                 card_view:cardCornerRadius="4dp">
 
                 <RelativeLayout
+                    android:id="@+id/profile"
+                    android:background="@color/colorDarkRed"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/vertical_card" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
                         android:padding="5dp"
+                        android:background="#4000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
                         android:text="@string/profile" />
                 </RelativeLayout>
             </android.support.v7.widget.CardView>
@@ -170,14 +227,23 @@
                 card_view:cardCornerRadius="4dp">
 
                 <RelativeLayout
+                    android:background="@color/colorGrey"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/vertical_card" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
                         android:gravity="center"
+                        android:background="#4000"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite"
                         android:padding="5dp"
                         android:text="@string/saved" />
                 </RelativeLayout>
