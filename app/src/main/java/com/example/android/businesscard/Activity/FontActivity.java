@@ -13,8 +13,8 @@ import android.widget.TextView;
 import com.example.android.businesscard.R;
 
 public class FontActivity extends AppCompatActivity {
-    RadioButton AlexBrush, bauhaus, OpenSans, Oswald, Roboto, segoeui;
-    TextView txt,tfirst,tsecond,tthird,tfour,tfive,tsix;
+    RadioButton AlexBrush, bauhaus, OpenSans, Oswald, Roboto, segoeui,ubantu,Arvin,Homenaje,LimeLight;
+    TextView tfirst,tsecond,tthird,tfour,tfive,tsix,tseven,teight,tnine,tten;
     Button Next;
     String newString;
     private static final String TAG = "FontActivity";
@@ -56,6 +56,26 @@ public class FontActivity extends AppCompatActivity {
         FontName = "segoeui.ttf";
         tsix.setTypeface(font);
 
+        tseven = findViewById(R.id.tseven);
+        font = Typeface.createFromAsset(getAssets(), "fonts/Arvin.ttf");
+        FontName = "Arvin.ttf";
+        tseven.setTypeface(font);
+
+        teight = findViewById(R.id.teight);
+        font = Typeface.createFromAsset(getAssets(), "fonts/Homenaje.ttf");
+        FontName = "Homenaje.ttf";
+        teight.setTypeface(font);
+
+        tnine = findViewById(R.id.tnine);
+        font = Typeface.createFromAsset(getAssets(), "fonts/Limelight.ttf");
+        FontName = "Limelight.ttf";
+        tnine.setTypeface(font);
+
+        tten = findViewById(R.id.ten);
+        font = Typeface.createFromAsset(getAssets(), "fonts/Ubuntu.ttf");
+        FontName = "Ubuntu.ttf";
+        tten.setTypeface(font);
+
 
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
@@ -86,7 +106,6 @@ public class FontActivity extends AppCompatActivity {
                 }
             }
         });
-        txt = findViewById(R.id.txt);
         AlexBrush = findViewById(R.id.alexbrush);
         AlexBrush.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +113,6 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/AlexBrush.ttf");
                 FontName = "AlexBrush.ttf";
-                txt.setTypeface(font);
             }
         });
         bauhaus = findViewById(R.id.bauhaus);
@@ -104,7 +122,6 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/bauhaus.ttf");
                 FontName = "bauhaus.ttf";
-                txt.setTypeface(font);
             }
         });
         OpenSans = findViewById(R.id.opensans);
@@ -114,7 +131,6 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/OpenSans.ttf");
                 FontName = "OpenSans.ttf";
-                txt.setTypeface(font);
             }
         });
         Oswald = findViewById(R.id.oswald);
@@ -124,7 +140,6 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/Oswald.ttf");
                 FontName = "Oswald.ttf";
-                txt.setTypeface(font);
             }
         });
         Roboto = findViewById(R.id.roboto);
@@ -134,7 +149,6 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/Roboto.ttf");
                 FontName = "Roboto.ttf";
-                txt.setTypeface(font);
             }
         });
         segoeui = findViewById(R.id.segoeui);
@@ -144,7 +158,43 @@ public class FontActivity extends AppCompatActivity {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/segoeui.ttf");
                 FontName = "segoeui.ttf";
-                txt.setTypeface(font);
+            }
+        });
+        Homenaje = findViewById(R.id.homenaje);
+        Homenaje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                font = Typeface.createFromAsset(getAssets(), "fonts/Homenaje.ttf");
+                FontName = "segoeui.ttf";
+            }
+        });
+        LimeLight = findViewById(R.id.limelight);
+        LimeLight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                font = Typeface.createFromAsset(getAssets(), "fonts/Limelight.ttf");
+                FontName = "segoeui.ttf";
+            }
+        });
+
+        Arvin = findViewById(R.id.arvin);
+        Arvin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                font = Typeface.createFromAsset(getAssets(), "fonts/Arvin.ttf");
+                FontName = "segoeui.ttf";
+            }
+        });
+        ubantu = findViewById(R.id.ubantu);
+        ubantu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                font = Typeface.createFromAsset(getAssets(), "fonts/Ubantu.ttf");
+                FontName = "segoeui.ttf";
             }
         });
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.font_toolbar);
