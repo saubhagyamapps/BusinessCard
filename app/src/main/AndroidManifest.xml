@@ -27,7 +27,21 @@
             android:label="@string/profile" />
         <activity android:name=".Activity.GreenCardActivity" />
         <activity android:name=".Activity.RedCardActivity" />
-        <activity android:name=".Activity.FontActivity"></activity>
+        <activity android:name=".Activity.FontActivity" />
+        <activity android:name=".Activity.VerticleCards" />
+        <activity android:name=".Activity.SquareCards" />
+        <activity android:name=".Activity.SquareFirst" />
+        <activity android:name=".Activity.SquareSecond" />
+        <activity android:name=".Activity.SquareThird" />
+        <activity android:name=".Activity.SquareFourth" />
+        <activity android:name=".Activity.SquareFifth" />
+        <activity android:name=".Activity.SquareSix" />
+        <activity android:name=".Activity.VerticleFirst" />
+        <activity android:name=".Activity.VerticleSecond" />
+        <activity android:name=".Activity.VerticleThird" />
+        <activity android:name=".Activity.VerticleFourth" />
+        <activity android:name=".Activity.VerticleFifth" />
+        <activity android:name=".Activity.VerticleSix"></activity>
     </application>
 
 </manifest>

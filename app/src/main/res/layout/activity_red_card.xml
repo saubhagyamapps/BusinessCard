@@ -5,8 +5,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Activity.RedCardActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/red_toolbar"
+            android:layout_height="match_parent"
+            app:title="Cards"
+            >
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.CardView
+        android:layout_below="@id/app_bar"
+        android:id="@+id/card"
         android:layout_width="match_parent"
         app:cardCornerRadius="5dp"
         app:cardElevation="6dp"
@@ -146,4 +162,34 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_below="@+id/card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:text="Share"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/sharered"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:text="Download"
+            android:layout_weight="1"
+            android:textColor="@color/colorblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/download1"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
 </RelativeLayout>

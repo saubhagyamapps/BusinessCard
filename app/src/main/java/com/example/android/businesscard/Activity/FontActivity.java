@@ -166,7 +166,7 @@ public class FontActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/Homenaje.ttf");
-                FontName = "segoeui.ttf";
+                FontName = "Homenaje.ttf";
             }
         });
         LimeLight = findViewById(R.id.limelight);
@@ -175,7 +175,7 @@ public class FontActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/Limelight.ttf");
-                FontName = "segoeui.ttf";
+                FontName = "Limelight.ttf";
             }
         });
 
@@ -185,7 +185,7 @@ public class FontActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 font = Typeface.createFromAsset(getAssets(), "fonts/Arvin.ttf");
-                FontName = "segoeui.ttf";
+                FontName = "Arvin.ttf";
             }
         });
         ubantu = findViewById(R.id.ubantu);
@@ -193,8 +193,8 @@ public class FontActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                font = Typeface.createFromAsset(getAssets(), "fonts/Ubantu.ttf");
-                FontName = "segoeui.ttf";
+                font = Typeface.createFromAsset(getAssets(), "fonts/Ubuntu.ttf");
+                FontName = "Ubuntu.ttf";
             }
         });
         android.support.v7.widget.Toolbar toolbar = findViewById(R.id.font_toolbar);

@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import com.example.android.businesscard.R;
 
 public class MainActivity extends AppCompatActivity {
-RelativeLayout profile,horizontal_card;
+RelativeLayout profile,horizontal_card,verticle_cards,square_cards;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,22 @@ RelativeLayout profile,horizontal_card;
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,ManageProfile.class);
+                startActivity(intent);
+            }
+        });
+        square_cards = findViewById(R.id.square_cards);
+        square_cards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SquareCards.class);
+                startActivity(intent);
+            }
+        });
+        verticle_cards = findViewById(R.id.verticle_cards);
+        verticle_cards.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,VerticleCards.class);
                 startActivity(intent);
             }
         });

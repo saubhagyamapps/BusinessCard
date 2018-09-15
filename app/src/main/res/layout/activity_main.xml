@@ -78,11 +78,13 @@
                 card_view:cardElevation="5dp">
 
                 <RelativeLayout
+                    android:id="@+id/verticle_cards"
                     android:background="@color/colorOrange"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <ImageView
+
                         android:padding="7dp"
                         android:layout_width="80dp"
                         android:layout_centerInParent="true"
@@ -121,10 +123,12 @@
                 card_view:cardCornerRadius="4dp">
 
                 <RelativeLayout
+                    android:id="@+id/square_cards"
                     android:background="@color/colorYellow"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
+
                         android:layout_centerInParent="true"
                         android:layout_width="80dp"
                         android:padding="12dp"

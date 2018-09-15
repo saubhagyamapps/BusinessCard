@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SquareCards">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/stoolbar"
+            android:layout_height="match_parent"
+            app:title=" Square Cards"
+            >
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/sfirst"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/sfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp" />
+
+        <ImageView
+            android:id="@+id/ssecond"
+            android:scaleType="fitXY"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:src="@drawable/ssecond"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/sthird"
+                android:scaleType="fitXY"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:src="@drawable/sthird"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp" />
+
+            <ImageView
+                android:id="@+id/sfourth"
+                android:src="@drawable/sfoourth"
+                android:scaleType="fitXY"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/sfifth"
+                android:src="@drawable/sfifth"
+                android:scaleType="fitXY"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp" />
+
+            <ImageView
+                android:id="@+id/ssiz"
+                android:src="@drawable/ssix"
+                android:scaleType="fitXY"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

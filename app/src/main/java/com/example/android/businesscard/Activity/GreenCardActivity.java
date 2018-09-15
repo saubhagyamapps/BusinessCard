@@ -12,6 +12,7 @@ import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -40,7 +41,7 @@ public class GreenCardActivity extends AppCompatActivity {
     String root;
     Bitmap bitmap;
     CardView linearLayout,card;
-    Button download;
+    Button download,share;
     CardView img;
     String timeStamp;
 
@@ -48,6 +49,18 @@ public class GreenCardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_green_card);
+        android.support.v7.widget.Toolbar toolbar =  findViewById(R.id.green_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        share = findViewById(R.id.share);
+        share.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         download = findViewById(R.id.download);
         linearLayout = findViewById(R.id.card);
 
@@ -76,15 +89,15 @@ public class GreenCardActivity extends AppCompatActivity {
         edt_subtitle = findViewById(R.id.subtitle);
 
         SharedPreferences prefs = getSharedPreferences("status", MODE_PRIVATE);
-        String fname = prefs.getString("fname", "No name defined");
-        String lname = prefs.getString("lname", "No name defined");
-        String title = prefs.getString("title", "No name defined");
-        String subtitle = prefs.getString("subtitle", "No name defined");
-        String post = prefs.getString("post", "No name defined");
-        String email = prefs.getString("email", "No name defined");
-        String website = prefs.getString("website", "No name defined");
-        String address = prefs.getString("address", "No name defined");
-        String cnum = prefs.getString("cnum", "No name defined");
+        String fname = prefs.getString("fname", "Abc");
+        String lname = prefs.getString("lname", "Abc");
+        String title = prefs.getString("title", "Abc");
+        String subtitle = prefs.getString("subtitle", "Abc");
+        String post = prefs.getString("post", "Abc");
+        String email = prefs.getString("email", "Abc");
+        String website = prefs.getString("website", "Abc");
+        String address = prefs.getString("address", "Abc");
+        String cnum = prefs.getString("cnum", "Abc");
 
         font = Typeface.createFromAsset(getAssets(), "fonts/"+newString);
 
@@ -111,6 +124,15 @@ public class GreenCardActivity extends AppCompatActivity {
         Bitmap bmp = Bitmap.createBitmap(layout.getDrawingCache());
         layout.setDrawingCacheEnabled(false);
         return bmp;
+    }
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
     private void saveChart(Bitmap getbitmap, float height, float width, CardView img) {
 
