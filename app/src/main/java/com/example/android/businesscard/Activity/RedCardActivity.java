@@ -2,8 +2,8 @@ package com.example.android.businesscard.Activity;
 
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -12,12 +12,13 @@ import android.widget.Toast;
 import com.example.android.businesscard.R;
 
 public class RedCardActivity extends AppCompatActivity {
-    TextView name,setpost,edt_email,edt_cnum,edt_website,edt_address,edt_title,edt_subtitle;
     private static final String TAG = "GreenCardActivity";
+    TextView name, setpost, edt_email, edt_cnum, edt_website, edt_address, edt_title, edt_subtitle;
     String newString;
 
     RelativeLayout relative;
     Typeface font;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +30,14 @@ public class RedCardActivity extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         newString = extras.getString("font");
         Log.e(TAG, "hiiiiii: " + newString);
-        name =findViewById(R.id.rname);
-        setpost =findViewById(R.id.rpost);
-        edt_email =findViewById(R.id.remail);
-        edt_cnum =findViewById(R.id.rcnum);
-        edt_website =findViewById(R.id.rwebsite);
-        edt_address =findViewById(R.id.raddress);
-        edt_title =findViewById(R.id.rtitle);
-        edt_subtitle =findViewById(R.id.rsubtitle);
+        name = findViewById(R.id.rname);
+        setpost = findViewById(R.id.rpost);
+        edt_email = findViewById(R.id.remail);
+        edt_cnum = findViewById(R.id.rcnum);
+        edt_website = findViewById(R.id.rwebsite);
+        edt_address = findViewById(R.id.raddress);
+        edt_title = findViewById(R.id.rtitle);
+        edt_subtitle = findViewById(R.id.rsubtitle);
         SharedPreferences prefs = getSharedPreferences("status", MODE_PRIVATE);
         String fname = prefs.getString("fname", "No name defined");
         String lname = prefs.getString("lname", "No name defined");
@@ -47,7 +48,7 @@ public class RedCardActivity extends AppCompatActivity {
         String website = prefs.getString("website", "No name defined");
         String address = prefs.getString("address", "No name defined");
         String cnum = prefs.getString("cnum", "No name defined");
-        font = Typeface.createFromAsset(getAssets(), "fonts/"+newString);
+        font = Typeface.createFromAsset(getAssets(), "fonts/" + newString);
         name.setTypeface(font);
         setpost.setTypeface(font);
         edt_email.setTypeface(font);
@@ -64,5 +65,10 @@ public class RedCardActivity extends AppCompatActivity {
         edt_address.setText(address);
         edt_title.setText(title);
         edt_subtitle.setText(subtitle);
+        testing();
+    }
+
+    private void testing() {
+        Toast.makeText(RedCardActivity.this, "keshu odedara", Toast.LENGTH_LONG).show();
     }
 }
