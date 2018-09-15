@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.android.businesscard.R;
 
@@ -14,12 +15,17 @@ public class RedCardActivity extends AppCompatActivity {
     TextView name,setpost,edt_email,edt_cnum,edt_website,edt_address,edt_title,edt_subtitle;
     private static final String TAG = "GreenCardActivity";
     String newString;
+
     RelativeLayout relative;
     Typeface font;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_red_card);
+
+        Toast.makeText(this, "Abzsjfgdszkfk", Toast.LENGTH_SHORT).show();
+
+
         Bundle extras = getIntent().getExtras();
         newString = extras.getString("font");
         Log.e(TAG, "hiiiiii: " + newString);
