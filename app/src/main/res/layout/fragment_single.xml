@@ -13,6 +13,7 @@
     android:layout_width="match_parent"
     android:layout_height="180dp">
     <ImageView
+        android:id="@+id/fcard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/card1"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/card2"
             android:scaleType="fitXY"
+            android:id="@+id/scard"
             />
     </android.support.v7.widget.CardView>
 </RelativeLayout>

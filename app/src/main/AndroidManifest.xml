@@ -3,6 +3,8 @@
     package="com.example.android.businesscard">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -19,7 +21,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.ManageProfile" />
-        <activity android:name=".Activity.HorizontalCards"></activity>
+        <activity android:name=".Activity.HorizontalCards" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:label="@string/profile" />
+        <activity android:name=".Activity.GreenCardActivity" />
+        <activity android:name=".Activity.RedCardActivity" />
+        <activity android:name=".Activity.FontActivity"></activity>
     </application>
 
 </manifest>

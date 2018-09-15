@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.RedCardActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="6dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorblack"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John Doe"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="CEO"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:layout_gravity="right"
+                android:background="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/rcnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:text="1234567890"
+                android:textColor="@color/colorGrey"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UniFields"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rsubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Apps"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/remail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="johnaa@gmail.com"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="www.johnsdfi.com"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/colorRed"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/raddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mountain View, CA"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -14,10 +14,7 @@
             android:layout_width="match_parent"
             android:id="@+id/my_awesome_toolbar"
             android:layout_height="match_parent"
-
             app:title="Horizontal Cards"
-
-
             >
         </android.support.v7.widget.Toolbar>
 

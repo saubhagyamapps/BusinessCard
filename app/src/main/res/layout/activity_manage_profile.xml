@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res/android"
     tools:context=".Activity.ManageProfile">
 
     <android.support.design.widget.AppBarLayout
@@ -55,6 +56,7 @@
                     android:weightSum="5">
 
                     <TextView
+                        android:id="@+id/mpname"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -76,6 +78,7 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/mpemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -85,7 +88,7 @@
                     android:textSize="15dp" />
 
                 <TextView
-
+                    android:id="@+id/mpwebsite"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -95,6 +98,7 @@
                     android:textSize="15dp" />
 
                 <TextView
+                    android:id="@+id/mpcontact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -106,5 +110,13 @@
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/addprofile"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_margin="16dp" />
 </RelativeLayout>

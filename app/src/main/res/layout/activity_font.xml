@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.FontActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/font_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Select Font" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/font_toolbar"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="AlexBrush"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tfirst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="bauhaus"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/alexbrush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="bauhaus"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abc Xyz"
+                        android:id="@+id/tsecond"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/bauhaus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OpenSans"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tthird"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abc Xyz"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/opensans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Oswald"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tfour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abc Xyz"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/oswald"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Roboto"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tfive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abc Xyz"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/roboto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="segoeui"
+                        android:textColor="@color/colorRed"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tsix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Abc Xyz"
+                        android:textColor="@color/colorblack"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/segoeui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/colorPrimary" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Android"
+            android:textColor="@color/colorblack"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textSize="18dp" />
+
+        <!--  <android.support.v7.widget.CardView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              app:cardCornerRadius="5dp"
+              app:cardElevation="6dp">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="6"
+                      android:orientation="vertical">
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Dancing Script"
+                          android:textColor="@color/colorRed"
+                          android:textSize="15dp"
+                          android:textStyle="bold" />
+
+                      <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Abc Xyz"
+                          android:textColor="@color/colorblack"
+                          android:textSize="15dp" />
+                  </LinearLayout>
+
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1" />
+              </LinearLayout>
+          </android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</RelativeLayout>
