@@ -25,7 +25,8 @@ public class VerticleCards extends AppCompatActivity {
         first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleFirst.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vfirst");
                 startActivity(intent);
             }
         });
@@ -33,7 +34,8 @@ public class VerticleCards extends AppCompatActivity {
         second.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleSecond.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vsecond");
                 startActivity(intent);
             }
         });
@@ -41,7 +43,8 @@ public class VerticleCards extends AppCompatActivity {
         third.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleThird.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vthird");
                 startActivity(intent);
             }
         });
@@ -49,7 +52,8 @@ public class VerticleCards extends AppCompatActivity {
         fourth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleFourth.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vfourth");
                 startActivity(intent);
             }
         });
@@ -57,7 +61,8 @@ public class VerticleCards extends AppCompatActivity {
         fifth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleFifth.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vfive");
                 startActivity(intent);
             }
         });
@@ -65,7 +70,8 @@ public class VerticleCards extends AppCompatActivity {
         six.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VerticleCards.this, VerticleSix.class);
+                Intent intent = new Intent(VerticleCards.this, FontActivity.class);
+                intent.putExtra("value", "vsix");
                 startActivity(intent);
             }
         });

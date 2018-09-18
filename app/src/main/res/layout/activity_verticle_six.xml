@@ -19,4 +19,177 @@
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@color/colorSkin"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDArkGrey"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/s_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UniFields"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+            <TextView
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/s_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apps"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/s_lname"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John"
+            android:textColor="@color/colorDArkGrey"
+            android:textSize="15dp" />
+
+        <TextView
+android:id="@+id/s_post"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CEO"
+            android:textColor="@color/colorDArkGrey"
+            android:textSize="15dp" />
+        <View
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDArkGrey"/>
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorDArkGrey"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/emailwhite"/>
+
+            <TextView
+                android:id="@+id/s_email"
+                android:text="Jonh@unifieldsapps.in"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorDArkGrey"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/phonewhite"/>
+
+            <TextView
+                android:id="@+id/s_cnum"
+                android:text="1234567800"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorDArkGrey"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/websitewhite"/>
+
+            <TextView
+                android:id="@+id/s_website"
+                android:text="www.unifields.com"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="5"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorDArkGrey"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/homewhite"/>
+
+
+            <TextView
+                android:id="@+id/s_address"
+                android:text="Mountrain View, CA"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

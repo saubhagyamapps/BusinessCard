@@ -9,14 +9,141 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
-
         <android.support.v7.widget.Toolbar
-            android:layout_width="match_parent"
             android:id="@+id/vfourth_toolbar"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:title="Cards"
-            >
-        </android.support.v7.widget.Toolbar>
-
+            app:title="Cards"/>
     </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPink"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vfo_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:text="UniFields"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/vfo_title"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Apps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#F6F6F6"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vfo_address"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:text="MountView, CA"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPink" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorDArkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink"/>
+            <TextView
+                android:id="@+id/vfo_post"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:text="Post"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink"/>
+            <TextView
+                android:id="@+id/vfo_contact"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:text="123456798900"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink"/>
+            <TextView
+                android:id="@+id/vfo_email"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:text="abc@gmail.com"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink"/>
+            <TextView
+                android:id="@+id/vfo_website"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                android:text="www.abc.com"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPink"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

@@ -140,6 +140,41 @@ public class FontActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+                else if (newString.equals("vfirst")){
+                    Intent intent = new Intent(FontActivity.this, VerticleFirst.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("vsecond")){
+                    Intent intent = new Intent(FontActivity.this, VerticleSecond.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+                }
+
+                else if (newString.equals("vthird")){
+                    Intent intent = new Intent(FontActivity.this, VerticleThird.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+                }
+
+                else if (newString.equals("vfourth")){
+                    Intent intent = new Intent(FontActivity.this, VerticleFourth.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+                }
+
+                else if (newString.equals("vfive")){
+                    Intent intent = new Intent(FontActivity.this, VerticleFifth.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+                }
+
+                else if (newString.equals("vsix")){
+                    Intent intent = new Intent(FontActivity.this, VerticleSix.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+                }
 
                 else
                 {

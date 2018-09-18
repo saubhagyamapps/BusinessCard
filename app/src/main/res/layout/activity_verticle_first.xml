@@ -19,4 +19,164 @@
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_centerInParent="true"
+        android:background="@color/colorDArkGrey"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/vf_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="UniFields"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/vf_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="Apps"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDArkGrey"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/emailwhite" />
+
+            <TextView
+                android:id="@+id/vf_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Jonh@unifieldsapps.in"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDArkGrey"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/phonewhite" />
+
+            <TextView
+                android:id="@+id/vf_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1234567800"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDArkGrey"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/websitewhite" />
+
+            <TextView
+                android:id="@+id/vf_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="www.unifields.com"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDArkGrey"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:src="@drawable/homewhite" />
+
+
+            <TextView
+                android:id="@+id/vf_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Mountrain View, CA"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/vf_address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="MountainView, CA"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhite" />
+
+    </LinearLayout>
 </RelativeLayout>
