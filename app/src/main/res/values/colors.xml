@@ -11,8 +11,11 @@
     <color name="colorPink">#FA5C5B</color>
     <color name="colorOrange">#FC774F</color>
     <color name="colorLightBlue">#00BCD4</color>
-    <color name="colorYellow">#EFA25C</color>
+    <color name="colorYellow">#FED201</color>
     <color name="colorDarkRed">#8E6B65</color>
     <color name="colorGrey">#95A0AF</color>
     <color name="colorRed">#DF152D</color>
+    <color name="colorLightGrey">#EAEAEA</color>
+    <color name="colorDArkGrey">#424444</color>
+
 </resources>

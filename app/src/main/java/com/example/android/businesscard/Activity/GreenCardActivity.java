@@ -125,6 +125,7 @@ public class GreenCardActivity extends AppCompatActivity {
         layout.setDrawingCacheEnabled(false);
         return bmp;
     }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:

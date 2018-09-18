@@ -25,7 +25,8 @@ public class SquareCards extends AppCompatActivity {
         first.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareFirst.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "sfirst");
                 startActivity(intent);
             }
         });
@@ -33,7 +34,8 @@ public class SquareCards extends AppCompatActivity {
         second.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareSecond.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "ssecond");
                 startActivity(intent);
             }
         });
@@ -41,7 +43,8 @@ public class SquareCards extends AppCompatActivity {
         third.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareThird.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "sthird");
                 startActivity(intent);
             }
         });
@@ -49,7 +52,8 @@ public class SquareCards extends AppCompatActivity {
         fourth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareFourth.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "sfour");
                 startActivity(intent);
             }
         });
@@ -57,7 +61,8 @@ public class SquareCards extends AppCompatActivity {
         fifth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareFifth.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "sfive");
                 startActivity(intent);
             }
         });
@@ -65,7 +70,8 @@ public class SquareCards extends AppCompatActivity {
         six.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SquareCards.this, SquareSix.class);
+                Intent intent = new Intent(SquareCards.this, FontActivity.class);
+                intent.putExtra("value", "ssix");
                 startActivity(intent);
             }
         });

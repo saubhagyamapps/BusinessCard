@@ -98,10 +98,51 @@ public class FontActivity extends AppCompatActivity {
                     startActivity(intent);
 
 
-                } else {
+                } else if (newString.equals("green")){
                     Intent intent = new Intent(FontActivity.this, GreenCardActivity.class);
                     intent.putExtra("font", FontName);
                     startActivity(intent);
+
+                }
+                else if (newString.equals("sfirst")){
+                    Intent intent = new Intent(FontActivity.this, SquareFirst.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("ssecond")){
+                    Intent intent = new Intent(FontActivity.this, SquareSecond.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("sthird")){
+                    Intent intent = new Intent(FontActivity.this, SquareThird.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("sfour")){
+                    Intent intent = new Intent(FontActivity.this, SquareFourth.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("sfive")){
+                    Intent intent = new Intent(FontActivity.this, SquareFifth.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+                else if (newString.equals("ssix")){
+                    Intent intent = new Intent(FontActivity.this, SquareSix.class);
+                    intent.putExtra("font", FontName);
+                    startActivity(intent);
+
+                }
+
+                else
+                {
 
                 }
             }
